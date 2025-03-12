@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Property</title>
+    <style>
+        section{
+            width: 200px;
+            height: 200px;
+            background-color: crimson;
+            border: 1px solid black;
+            margin: 150px auto;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 255, 255, 0.446);
+            transition: background-color 1s;
+        }
+        div:hover{
+            background-color: red;
+            transform: rotate(30deg);
+            /* translate : px */
+                                /* X */
+            /* transform: translate(50px); */
+                                /* X  Y */
+            /* transform: translate(50px,50px); */
+
+
+            /* transform: translateX(50px); */
+            /* transform: translateX(-50px); */
+
+            /* transform: translateY(50px); */
+            /* transform: translateY(-50px); */
+
+
+            /* scale :  numeric  : default 1 */
+                            /* X Y */
+            /* transform: scale(1.5); */
+            /* transform: scale(.5); */
+            /* transform: scale(.5,2); */
+            /* transform: scaleX(1.5); */
+            /* transform: scaleX(.5); */
+            /* transform: scaleX(-1); */
+            /* transform: scaleY(2); */
+            /* transform: scaleY(.7); */
+            /* transform: scaleY(-1); */
+
+
+            /* Rotate : deg  : 0deg */
+                        /* Z */
+            /* transform: rotate(30deg); */
+            /* transform: rotate(30deg,30deg); not working*/
+            /* transform: rotateX(50deg); */
+            /* transform: rotateY(-60deg); */
+
+            /* skew : deg : 0deg */
+                            /* X */
+            /* transform: skew(30deg); */
+            /* transform: skew(90deg,90deg); */
+            /* transform: skewX(-30deg); */
+            /* transform: skewY(30deg); */
+            /* transform: skewY(-30deg); */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="rotate-">
+            Transform
+        </div>
+    </section>
+    <section>
+        <div class="rotateX">
+
+        </div>
+    </section>
+</body>
+</html>
+
+<!-- 
+13 Section 
+    1 div class
+-->

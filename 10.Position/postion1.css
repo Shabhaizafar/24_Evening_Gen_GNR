@@ -1,0 +1,21 @@
+div{
+    border: 1px solid black;
+    background-color: aqua;
+}
+img{
+    width: 200px;
+
+    /* default */
+    /* position: static; */
+
+    /* position: relative; */
+    position: absolute;
+    position: fixed;
+    /* position: sticky; */
+
+
+    /* top: 10px; */
+    /* left: 200px; */
+    /* bottom: 0px; */
+    /* right: 0px; */
+}

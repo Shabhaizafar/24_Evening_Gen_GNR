@@ -1,0 +1,87 @@
+/* Parent Element */
+section{
+    background-color: darkseagreen;
+    height: 600px;
+    display: flex;
+
+    /* ------------ */
+    /* default */
+    /* justify-content: left; */
+    /* justify-content: start; */
+    /* justify-content: flex-start; */
+
+    /* justify-content: right; */
+    /* justify-content: end; */
+    /* justify-content:flex-end; */
+
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* --------------- */
+    /* default */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* ------------------- */
+    /* default  */
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+
+    /* ----------------- */
+    /* flex-flow: row-reverse; */
+    /* flex-flow: wrap; */
+    /* flex-flow: row-reverse wrap; */
+    /* --------------------------- */
+    /* column-gap: 20px; */
+    /* row-gap: 30px; */
+        /* row+col */
+    /* gap: 20px; */
+
+        /*row  col  */
+    /* gap: 50px 20px; */
+}
+/* Child Element */
+div{
+    /* display: inline-block; */
+    flex-grow: 1;
+}
+.box1{
+    background-color: lightblue;
+    /* flex-grow: 1; */
+}
+.box2{
+    background-color: lightcoral;
+    /* flex-grow: .5; */
+}
+.box3{
+    background-color: lightgreen;
+}
+.box4{
+    background-color: lightsalmon;
+}
+.box5{
+    background-color: lightslategray;
+}
+.box6{
+    background-color: limegreen;
+}
+.box7{
+    background-color: darkslategrey;
+}
+.box8{
+    background-color: darkolivegreen;
+}
+
+/* 
+responsive website/layout (100%)
+
+1. flex : flexible
+
+2. grid  : fixed design 
+
+3. media query.  : change layout according  device size
+
+4. meta Tag.
+*/

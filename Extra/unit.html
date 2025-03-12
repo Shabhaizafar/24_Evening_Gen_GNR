@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Units</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        :root{
+            font-size: 18px;
+            /* Variable */
+            /* How to Create a Variable in CSS */
+            --bg-blue : red;
+            --font-small : 32px;
+        }
+        body{
+            font-size: 16px;
+        }
+        section{
+            background-color: darkolivegreen;
+            color: lightblue;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        div{
+            
+            color: lightblue;
+            text-align: center;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            font-size: var(--font-small);
+            /* z-index: attr(data-text); */
+            /* cm ,mm,px ,pt,pc ,in  */
+            /* font-size: 16px; */
+                    /* Parent element *   */
+            /* font-size: 2em; */
+
+                        /* Root Element */
+            /* font-size: 2rem; */
+            
+            /* width: 50%; */
+                    /* screen Resolution :  view Width */
+            /* width: 100vw; */
+
+            /* height: 200px; */
+            /* height: 100%; */
+
+            /* screen Resolution : view Height */
+            /* height: 100vh; */
+
+                /* width/height  : max  */
+            /* width: 100vmax; */
+            /* height: 100vmax; */
+
+            /* width/height  : min  */
+            /* width: 100vmin; */
+            /* height: 100vmin; */
+                /* +,-,/,* */
+            /* width: calc(100% - 100px); */
+        }
+        div:first-child{
+            top: 50px;
+            left: 50px;
+            background-color: darkolivegreen;
+        }
+        div:nth-child(2){
+            top: 100px;
+            left: 100px;
+            background-color: lightcoral;
+        }
+        div:nth-child(3){
+            top: 150px;
+            left: 150px;
+            background-color: lightgray;
+        }
+        div:last-child{
+            top: 200px;
+            left: 200px;
+            background-color: var(--bg-blue);
+        }
+        /* 
+            url(),calc(),attr(),var()
+
+                repeat(),fit-content(),max-content()
+        */
+        /* psudo Selector */
+        /* :: */
+        div::before{
+            content: attr(data-text);
+        }
+    </style>
+</head>
+<body>
+    <!-- <section>Royal</section>     -->
+    <div data-text="Zafar1">Royal</div>
+    <div data-text="Zafar2">Royal</div>
+    <div data-text="Zafar3">Royal</div>
+    <div data-text="Zafar4">Royal</div>
+
+</body>
+</html>
+
+
+<!-- 
+attr() : psudo Selector 
+-->

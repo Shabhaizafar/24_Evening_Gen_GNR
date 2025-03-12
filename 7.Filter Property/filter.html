@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+        }
+        .filter{
+            /* px */     
+            /* filter: blur(10px); */
+
+            /* 0-1 */
+            /* filter: grayscale(1); */
+
+            /* 0-1 */
+            /* filter: opacity(0); */
+
+            /* filter: sepia(1); */
+
+            /* filter: invert(1); */
+
+            /* deg */
+            /* filter: hue-rotate(270deg); */
+                            /* h-offset  v-offset blur color*/
+            filter: drop-shadow(10px 10px 10px blue);
+        }
+
+        /* % 
+            default : 100%
+         */
+        .saturate{
+            /* black-white */
+            filter: saturate(0%);
+        }
+        .brightness{
+            /* black */
+            filter: brightness(300%);
+        }
+        .contrast{
+            /* gray */
+            filter: contrast(300%);
+        }
+    </style>
+</head>
+<body>
+    <img src="https://imgs.search.brave.com/eNENbSCj7Q1bUM7oEX-1iYQqmUJ5OhdijAHo1saAvy0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODQ3ZjQwN2NlZjEw/MTRjMGI1ZTQ4ODku/cG5n" alt="">
+    <img src="https://imgs.search.brave.com/eNENbSCj7Q1bUM7oEX-1iYQqmUJ5OhdijAHo1saAvy0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODQ3ZjQwN2NlZjEw/MTRjMGI1ZTQ4ODku/cG5n" alt="" class="filter">
+    <img src="https://imgs.search.brave.com/eNENbSCj7Q1bUM7oEX-1iYQqmUJ5OhdijAHo1saAvy0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODQ3ZjQwN2NlZjEw/MTRjMGI1ZTQ4ODku/cG5n" alt="" class="saturate">
+    <img src="https://imgs.search.brave.com/eNENbSCj7Q1bUM7oEX-1iYQqmUJ5OhdijAHo1saAvy0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODQ3ZjQwN2NlZjEw/MTRjMGI1ZTQ4ODku/cG5n" alt="" class="brightness">
+    <img src="https://imgs.search.brave.com/eNENbSCj7Q1bUM7oEX-1iYQqmUJ5OhdijAHo1saAvy0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODQ3ZjQwN2NlZjEw/MTRjMGI1ZTQ4ODku/cG5n" alt="" class="contrast">
+</body>
+</html>

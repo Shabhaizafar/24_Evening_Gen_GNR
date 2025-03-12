@@ -1,0 +1,34 @@
+=> What is CSS : 
+-> cascading Style Sheet
+
+    sheet(document)
+    style(design)
+    cascading (jevu ichhe aevu)
+
+=> Uses : 
+-> Design/style Structure of HTML
+
+=> Advantage : 
+-> website loader fast
+-> style 
+
+=> Disadvantage : 
+-> version CSS.
+        Browser : old   CSS3
+
+
+
+        HTML 5.2
+
+        CSS 3
+
+
+
+CSS File :
+extention : 
+.css 
+            
+
+Note : 
+    - we can use HTML without CSS.
+        but We can't use CSS without HTML File.

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query with Grid</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: gainsboro;
+            font-family: calibri;
+            display: grid;
+            grid-template-columns: 100px repeat(3,1fr) 100px;
+            grid-template-rows: 120px auto auto;
+            grid-template-areas:
+            "a a a a a"
+            ". b c d ."
+            ". e e e .";
+            gap: 20px;
+        }
+        img{
+            width: 100%;
+        }
+        h1{
+            background-color: navy;
+            color: white;
+            font-size: 40px;
+            grid-area: a;
+            align-content: center;
+            text-align: center;
+        }
+        section:nth-child(2){
+            grid-area: b;
+        }
+        section:nth-child(3){
+            grid-area: c;
+        }
+        section:nth-child(4){
+            grid-area: d;   
+        }
+        section:nth-child(5){
+            grid-area: e;   
+        }
+
+        @media screen and (max-width:1000px)  {
+            .container{
+            height: auto;
+            grid-template-columns: 100px repeat(4,1fr);
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+            "a a b b c"
+            "a a d d c"
+            "a a e e e";
+            }
+        }
+
+        @media screen and (max-width:768px)  {
+            .container{
+                grid-template-columns: 100px repeat(3,1fr) 100px;
+            grid-template-rows: 120px auto auto;
+            grid-template-areas:
+            "a a a a a"
+            ". b c d ."
+            ". e e e .";
+            }
+            p{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Media Query</h1>
+        <section>
+            <img src="https://imgs.search.brave.com/CTnTjreTf3YOaWet5vrtVV_obxRBPp5jkzC5QJAXlZo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by93YWxscGFwZXIt/aG9sb2dyYXBoaWMt/Y3VydmVkLXdhdmUt/bW90aW9uM2QtcmVu/ZGVyLWFic3RyYWN0/LWJhY2tncm91bmQt/bmF0dXJlLWxhbmRz/Y2FwZV8zNzI5OTkt/OTA2My5qcGc_c2Vt/dD1haXNfaHlicmlk" alt="">
+            <h3>Media Query</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil laudantium velit doloribus officiis quae reiciendis ullam vitae voluptates officia quisquam sequi sunt, perspiciatis delectus doloremque a eveniet molestiae optio amet, ipsam veritatis adipisci commodi. Officiis ullam totam sit consequatur. Provident.</p>
+        </section>
+        <section>
+            <img src="https://imgs.search.brave.com/CTnTjreTf3YOaWet5vrtVV_obxRBPp5jkzC5QJAXlZo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by93YWxscGFwZXIt/aG9sb2dyYXBoaWMt/Y3VydmVkLXdhdmUt/bW90aW9uM2QtcmVu/ZGVyLWFic3RyYWN0/LWJhY2tncm91bmQt/bmF0dXJlLWxhbmRz/Y2FwZV8zNzI5OTkt/OTA2My5qcGc_c2Vt/dD1haXNfaHlicmlk" alt="">
+            <h3>Media Query</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil laudantium velit doloribus officiis quae reiciendis ullam vitae voluptates officia quisquam sequi sunt, perspiciatis delectus doloremque a eveniet molestiae optio amet, ipsam veritatis adipisci commodi. Officiis ullam totam sit consequatur. Provident.</p>
+        </section>
+        <section>
+            <img src="https://imgs.search.brave.com/CTnTjreTf3YOaWet5vrtVV_obxRBPp5jkzC5QJAXlZo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by93YWxscGFwZXIt/aG9sb2dyYXBoaWMt/Y3VydmVkLXdhdmUt/bW90aW9uM2QtcmVu/ZGVyLWFic3RyYWN0/LWJhY2tncm91bmQt/bmF0dXJlLWxhbmRz/Y2FwZV8zNzI5OTkt/OTA2My5qcGc_c2Vt/dD1haXNfaHlicmlk" alt="">
+            <h3>Media Query</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil laudantium velit doloribus officiis quae reiciendis ullam vitae voluptates officia quisquam sequi sunt, perspiciatis delectus doloremque a eveniet molestiae optio amet, ipsam veritatis adipisci commodi. Officiis ullam totam sit consequatur. Provident.</p>
+        </section>
+        <section>
+            <img src="https://imgs.search.brave.com/CTnTjreTf3YOaWet5vrtVV_obxRBPp5jkzC5QJAXlZo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by93YWxscGFwZXIt/aG9sb2dyYXBoaWMt/Y3VydmVkLXdhdmUt/bW90aW9uM2QtcmVu/ZGVyLWFic3RyYWN0/LWJhY2tncm91bmQt/bmF0dXJlLWxhbmRz/Y2FwZV8zNzI5OTkt/OTA2My5qcGc_c2Vt/dD1haXNfaHlicmlk" alt="">
+            <h3>Media Query</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil laudantium velit doloribus officiis quae reiciendis ullam vitae voluptates officia quisquam sequi sunt, perspiciatis delectus doloremque a eveniet molestiae optio amet, ipsam veritatis adipisci commodi. Officiis ullam totam sit consequatur. Provident.</p>
+        </section>
+    </div>
+</body>
+</html>

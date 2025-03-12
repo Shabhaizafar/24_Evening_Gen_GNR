@@ -1,0 +1,51 @@
+section{
+    padding: 20px;
+    border: 3px solid lightcoral;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .7fr 1fr 1fr 1.7fr .5fr;
+    gap: 20px;
+    grid-template-areas: 
+    "a a"
+    "b c"
+    "b d"
+    "a a"
+    "f f"
+    ;
+}
+header,footer,article,div,main,aside{
+    background-color: rgb(77, 8, 130);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    align-content: center;
+}
+header{
+    grid-area: a;
+}
+article{
+    grid-area: b;
+}
+div{
+    grid-area: c;
+}
+aside{
+    grid-area: d;
+}
+main{
+    grid-area: e;
+}
+footer{
+    grid-area: f;
+}
+
+/* 
+2x5 
+2x4
+2x3
+2x2
+2x1
+1x1
+
+*/

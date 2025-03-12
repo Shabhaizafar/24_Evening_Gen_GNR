@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* img{
+            width: 300px;
+            height: 300px;
+            border: 5px solid blue;
+            display: block;
+            margin: 100px auto; */
+
+            /* default */
+            /* object-fit: fill; */
+            /* object-fit: none; */
+            /* object-fit:contain; */
+            /* object-fit: cover; */
+            /* object-fit: scale-down; */
+
+
+
+
+            /* object-position: unset; */
+            /* object-position: left; */
+            /* object-position: right; */
+            /* object-position: bottom; */
+            /* object-position: top; */
+            /* object-position: center; */
+                                /*X  Y */
+            /* object-position: -200px 0px; */
+            /* object-position: 0% 20%; */
+
+        /* } */
+        body{
+            background-color: lightcoral;
+        }
+        /* img{
+            width: 200px;
+            height: 25px;
+            background-color: aqua;
+            object-fit: cover;
+            object-position: 0% 100%;
+        } */
+         div{
+            display: inline-block;
+            background-color: aqua;
+         }
+         img{
+            display: block;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            border: 5px solid;
+         }
+        .cover:hover ~img{
+    
+            object-fit: cover;
+         }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="cover">cover</div>
+        <div>contains</div>
+
+        <img src="https://imgs.search.brave.com/Dc5ZHxcKwEyLNhxJW_FX893dO9jOrM5Np0beMSETNKI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU5/MzcxNzkxL3Bob3Rv/L3Rhai1tYWhhbC1p/bmRpYS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9TTVqNVdP/Ti1zYjVJYmVGeEU4/d0kzQ1JoRjFsWU8y/UWVGd0diSU1ZZzZm/Yz0" alt="">
+    </section>
+    <!-- <img src="https://www.pagani.com/app/themes/pagani/assets/images/header-logo.png" alt=""> -->
+</body>
+</html>
+
+<!-- 
+image
+-->

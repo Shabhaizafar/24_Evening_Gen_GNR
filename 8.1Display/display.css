@@ -1,0 +1,55 @@
+
+div{
+    background-color: aqua;
+
+    /* display: block; */
+    /* display: inline; */
+    display: inline-block;
+
+    width: 200px;
+    height: 200px;
+    /* margin: 40px; */
+    /* margin: auto; */
+    /* padding: 100px; */
+}
+
+/* 
+block : 
+    - default width : 100%
+    - default height : content-size
+    - width changable 
+    - height changable 
+    - margin workable
+    - margin : auto (workable)
+    - padding workable
+    - text line position : changable 
+*/
+
+/* 
+inline : 
+    - default width : content-size
+    - default height : content-size
+    - width : not Changable 
+    - Height : not Changable 
+    - margin : left-right    (top-bottom not working)
+    - margin : auto (not workable)
+    - padding workable
+    - text line position : fixed
+*/
+/* 
+inline-block : 
+    - default width : content-size
+    - default height : content-size
+    - width changable 
+    - height changable 
+    - margin workable
+    - margin : auto (not workable)
+    - padding workable
+    - text line position : changable 
+*/
+/* a{
+    display: block;
+    width: fit-content;
+    background-color: aqua;
+    margin: auto;
+} */

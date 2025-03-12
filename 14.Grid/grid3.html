@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid : Method-2</title>
+    <style>
+        main{
+            background-color: darkblue;
+            height: 600px;
+            display: grid;
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-columns: 100px 200px 300px 200px; */
+            grid-template-columns: 1fr 1fr 2fr;
+            /* grid-template-rows: auto; */
+
+            /* grid-template-rows: 100px 200px 100px; */
+            grid-template-rows: 1fr 2fr 3fr 1fr;
+            /* row-gap: 20px; */
+            /* column-gap: 30px; */
+            /* gap: 20px 30px; */
+
+            /* 
+            100% 
+            1fr = 100%/4 = 25%
+            */
+
+        }
+        .box1{
+            background-color: lightblue;
+        }
+        .box2{
+            background-color: lightcoral;
+        }
+        .box3{
+            background-color: lightgoldenrodyellow;
+        }
+        .box4{
+            background-color: lightseagreen;
+        }
+        .box5{
+            background-color: lightslategray;
+        }
+        .box6{
+            background-color: limegreen;
+        }
+        .box7{
+            background-color: darkkhaki;
+        }
+        .box8{
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+        <div class="box4">Box4</div>
+        <div class="box5">Box5</div>
+        <div class="box6">Box6</div>
+        <div class="box7">Box7</div>
+        <div class="box8">Box8</div>
+    </main>
+</body>
+</html>
+
+<!-- 
+->  responsive 
+-->

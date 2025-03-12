@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        div{
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            animation-name: box;
+            /* ms/s */
+            animation-duration: 4s;
+            /* animation-iteration-count: 3; */
+            animation-iteration-count: infinite;
+            /* animation-direction: normal; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-direction: reverse; */
+            /* position: relative; */
+        }
+        /* Methos - 1 */
+        @keyframes box {
+            from{
+                /* margin-left: 0px; */
+                /* left: 0px; */
+                transform: translateX(0px);
+            }
+            to{
+                /* margin-left: 400px; */
+                /* left: 400px; */
+                transform: translateX(400px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>    
+</body>
+</html>
+
+
+
+

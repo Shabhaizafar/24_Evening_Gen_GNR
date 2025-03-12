@@ -1,0 +1,56 @@
+/* Color Name  */
+h6{
+    color: red;
+    /* color : property */
+    /*  "red"  : property values */
+}
+
+/* Hexa Decimal Number */
+/* 
+0-9
+a-f
+*/
+h5{
+    color: #9f9f00;
+}
+
+/* RGB Color 
+red    : 0-255
+green: 0-255
+blue: 0-255
+rgb(red,green,blue)
+*/
+h4{
+    color: rgb(255,155,0);
+}
+
+/* 
+RGBA Color
+red    : 0-255
+green: 0-255
+blue: 0-255
+alpha :  1(default)  0-1    (color : opacity)
+rgba(red,green,blue,alpha)
+ */
+h3{
+    color: rgba(255,0,0,0);
+}
+
+/* HSL Color
+hue    :   0-360    deg(optional)
+saturation : 0%-100%    default 100%
+lightness : 0%-100%     default 50%
+ */
+h2{
+    color: hsl(0deg,100%,100%);
+}
+
+/* HSLA Color
+hue    :   0-360    deg(optional)
+saturation : 0%-100%    default 100%
+lightness : 0%-100%     default 50%
+alpha  :   1(default)  0-1    (color : opacity)
+ */
+ h1{
+    color: hsla(0deg,100%,50%,.5);
+}

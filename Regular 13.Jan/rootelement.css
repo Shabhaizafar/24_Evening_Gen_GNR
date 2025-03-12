@@ -1,0 +1,25 @@
+.size{
+    font-size: 16px;
+}
+
+/*root element : HTML Tag  */
+:root{
+    font-size: 32px;
+}
+div{
+    font-size: inherit;
+}
+h1{
+    /* parent value */
+    /* font-size: inherit; */   
+
+            /* Root */
+    /* font-size: initial; */
+
+}
+p{
+    font-size: inherit;
+}
+
+
+

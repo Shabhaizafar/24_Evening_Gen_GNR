@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: gainsboro;
+            display: flex;   
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: grey;
+            justify-content: space-between;
+            padding: 4px 40px;
+            align-items: center;
+        }
+        .logo{
+            font-size: 36px;
+        }
+        ul{
+            display: flex;
+            font-size: 18px;
+            gap: 25px;
+        }
+        section{
+            display: none;
+        }
+        @media screen and (max-width:768px) {
+            .container{
+                position: relative;
+            }
+            section{
+                display: block;
+            }
+            ul{
+                display: none;
+            }
+            section:hover ~ul{
+                display: block;
+                position: absolute;
+                top: 60px;
+                background-color: gainsboro;
+                width: 100%;
+                left: 0px;
+            }
+            section:hover ~ul li{
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            Logo
+        </div>
+        <section>
+            <span class="material-symbols-outlined">
+                menu
+                </span>
+        </section>
+        <ul>
+                <li>List1</li>
+                <li>List2</li>
+                <li>List3</li>
+                <li>List4</li>
+                <li>List5</li>
+            </ul>
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: gainsboro;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .logo{
+            background-color: coral;
+            flex-grow: 1;
+            /* min width */
+            flex-basis: 150px;
+        }
+        ul{
+            background-color: aqua;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            Logo
+        </div>
+        <ul>
+                <li>List1</li>
+                <li>List2</li>
+                <li>List3</li>
+                <li>List4</li>
+                <li>List5</li>
+            </ul>
+    </div>
+</body>
+</html> -->
